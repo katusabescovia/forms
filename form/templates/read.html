@@ -12,6 +12,7 @@
     
 
     <h2>Baby Information</h2>
+    
 
 
 
@@ -38,21 +39,25 @@
     
         <tr>
             <td>{{babies_informations.id}}</td>
-            <td>{{babies_informations.categorystay}}</td>
-            <td>{{babies_informations.categoryfees}}</td>
+            <td>{{babies_informations.c_stay}}</td>
+            <td>{{babies_informations.c_fees}}</td>
             <td>{{babies_informations.name_of_the_baby}}</td>
             <td>{{babies_informations.gender}}</td>
             <td>{{babies_informations.age}}</td>
             <td>{{babies_informations.parents_name}}</td>
            <td>{{babies_informations.name_of_the_person_brought_by_the_baby}}</td>
            <td>{{babies_informations.location}}</td>
-           <td>{{babies_informations.babysnumber}}</td>
+           <td>{{babies_informations.babys_number}}</td>
            <td>{{babies_informations.comment}}</td>
            <td>{{babies_informations.timein}}</td>
            <td>{{babies_informations.timeout}}</td>
         </tr>
+        
     
- </tbody>       
+ </tbody>   
+  <a href="/"><button class="btn btn-primary">Go back</button></a>
+  <a href="/edit{{each.id}}"><button class="btn btn-primary">Edit</button></a>
+
 
      
        

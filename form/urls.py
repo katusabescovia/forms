@@ -7,6 +7,7 @@ urlpatterns = [
     
     path('edit/<int:id>/', views.edit, name='edit'),
     path('read/<int:id>/', views.read, name='read'),
+    path('logout/', views.logout, name='logout'),
     
 
 ]

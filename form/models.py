@@ -23,9 +23,17 @@ class Babiesform(models.Model):
     name_of_the_person_brought_by_the_baby=models.CharField(max_length=200)
     location=models.CharField(max_length=50, null=True, blank=True)
     babys_number=models.IntegerField(default=0 ,null=True, blank=True)
+    name_of_the_person_taken_the_baby=models.CharField(max_length=200)
     comment=models.TextField(blank=True,null=True )
     timein=models.TimeField(null=False, blank=False)
     timeout=models.TimeField(null=False, blank=False)
 
     def __str__(self):
         return self.name_of_the_baby
+    
+    # class Login(models.Model):
+    #         username=models.CharField(max_length=200)
+    #         password=models.CharField(max_length=200)
+    #         def __str__(self):
+    #             return self.username
+            
